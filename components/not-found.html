@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<title>Not Found 404</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		font-family: 'Muli', sans-serif;
+	}
+	.header {
+		background-color: #21C08B;
+		width: 100%;
+		height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header__img {
+		width: 200px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.error {
+		background: linear-gradient(#21C08B, #AB88FF);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		min-height: calc(100vh - 200px);
+	}
+	@keyframes onLoadScale {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.25);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	.error__number {
+		color: white;
+		font-size: 50px;
+		animation: 1s ease 0s 1 onLoadScale;
+	}
+	.error__message {
+		color: white;
+	}
+	.footer {
+		display: flex;
+		align-items: center;
+		height: 100px;
+		width: 100%;
+		background-color: #AB88FF;
+	}
+	.footer a {
+		color: white;
+		cursor: pointer;
+		font-size: 14px;
+		padding-left: 30px;
+		text-decoration: none;
+	}
+	.footer a:hover {
+		text-decoration: underline;
+	}
+</style>
+<body>
+	<header class="header">
+		<img class="header__img" src="../assets/logo-platzi-video-BW2.png" alt="">
+	</header>
+
+	<section class="error">
+		<div class="error__number">404</div>
+		<div class="error__message">Página no encontrada</div>
+	</section>
+
+	<footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
