@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  background-color: #8F57FD;
+}
+body header {
+  background-color: #8F57FD;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header img:first-child {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+body footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+body footer a:hover {
+  text-decoration: underline;
+}
+
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu div:first-child {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.header__menu div:first-child img {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+}
+.header__menu div:first-child p {
+  margin: 0px;
+  color: white;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px;
+}
+.header__menu ul li {
+  margin: 10px 0px;
+}
+.header__menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.header__menu ul li a:hover {
+  text-decoration: underline;
+}
+.header__menu:hover ul, .header__menu ul:hover {
+  display: block;
+}
+
+.main {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main h2 {
+  color: white;
+  font-size: 25px;
+}
+.main input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+}
+.main input::placeholder {
+  color: white;
+}
+.main input:focus {
+  outline: none;
+}
+
+.carousel__title {
+  color: white;
+  font: 16px;
+  position: absolute;
+  padding-left: 30px;
+}
+
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.carousel__container:hover .carousel-item:hover .carousel-item__details {
+  opacity: 1;
+}
+
+.carousel-item {
+  background-color: cadetblue;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+.carousel-item img:first-child {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item__details {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carousel-item__details div:first-child > img {
+  height: 40px;
+  width: 40px;
+}
+.carousel-item__details p {
+  color: white;
+  line-height: 5px;
+}
+.carousel-item__details p:nth-child(2) {
+  font-size: 15px;
+}
+.carousel-item__details p:nth-child(3) {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=styles.css.map */

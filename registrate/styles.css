@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+}
+body header {
+  background-color: #21C08B;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #AB88FF;
+}
+body footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+body footer a:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  background: linear-gradient(#21C08B, #AB88FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.signup__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.signup__container h2 {
+  font-weight: 400;
+}
+.signup__container div {
+  text-align: center;
+}
+.signup__container div a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.signup__container div a:hover {
+  text-decoration: underline;
+}
+
+.signup__container--form {
+  display: flex;
+  flex-direction: column;
+}
+.signup__container--form input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+  color: white;
+}
+.signup__container--form input::placeholder {
+  color: white;
+}
+.signup__container--form button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

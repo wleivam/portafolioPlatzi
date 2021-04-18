@@ -1,0 +1,123 @@
+$font-family: 'Muli', sans-serif;
+$font-color: white;
+$background-color-header: #21C08B;
+$background-color-footer: #AB88FF;
+
+body {
+    margin: 0;
+    font-family: $font-family;
+
+    header {
+        background-color: $background-color-header;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: $background-color-footer;
+
+        a {
+            color: $font-color;
+            cursor: pointer;
+            font-size: 14px;
+            padding-left: 30px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.signup {
+    background: linear-gradient($background-color-header, $background-color-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.signup__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: $font-color;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    h2 {
+        font-weight: 400;
+    }
+
+    div {
+        text-align: center;
+
+        a {
+            font-size: 14px;
+            color: $font-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.signup__container--form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        background-color: transparent;
+        border-left: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid white;
+        font-family: $font-family;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        outline: none;
+        height: 50px;
+        color: $font-color;
+
+        &::placeholder {
+            color: $font-color;
+        }
+    }
+
+    button {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 25px;
+        color: $font-color;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-family;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 10px 0px;
+    }
+}
